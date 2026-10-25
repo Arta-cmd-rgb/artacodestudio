@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="artacodestudio — studio desain dan pengembangan website di Bali. Redesign, web design, dan build.">
+<title>artacodestudio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20261024-1440">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<noscript><style>.loader{display:none!important}.reveal{opacity:1!important;transform:none!important;clip-path:none!important}.split{opacity:1!important;transform:none!important}.hero__kicker,.hero__flag,.hero__stage,.hero__photo,.hero__intro,.hero__hey,.hero__aside,.hero__list,.hero__claim,.hero__lead{opacity:1!important;transform:none!important}.hero__word b{opacity:1!important;transform:none!important}html{scroll-behavior:auto}</style></noscript>
+</head>
+<body class="is-loading">
+
+<!-- ═══════════════ LOADER ═══════════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__mark">
+      <span class="loader__word">artacode</span>
+      <span class="loader__word loader__word--out">studio</span>
+    </div>
+    <div class="loader__bar"><i></i></div>
+    <div class="loader__meta">
+      <span>design &amp; code — bali</span>
+      <span class="loader__count">000</span>
+    </div>
+  </div>
+  <div class="loader__curtain"></div>
+</div>
+
+<!-- ═══════════════ CURSOR + PROGRESS + NOISE ═══════════════ -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="scroll-top" id="scrollTop" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</div>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="header" id="header">
+  <div class="header__row container">
+    <a href="#home" class="logo" data-cursor="home">
+      <svg class="logo__bean" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M9 33L20 6l11 27" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M13.5 24h13" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+        <rect x="26" y="27" width="7" height="7" fill="currentColor"/>
+      </svg>
+      <span class="logo__text">artacode<em>®</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <button class="nav__close" id="navClose" aria-label="Tutup menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="#tentang"  data-cursor="tentang"><span class="nav__num">01</span> Studio</a></li>
+        <li><a href="#layanan"  data-cursor="layanan"><span class="nav__num">02</span> Layanan</a></li>
+        <li><a href="#proses"   data-cursor="proses"><span class="nav__num">03</span> Proses</a></li>
+        <li><a href="#karya"    data-cursor="karya"><span class="nav__num">04</span> Karya</a></li>
+        <li><a href="#kontak"   data-cursor="kontak"><span class="nav__num">05</span> Kontak</a></li>
+      </ul>
+      <div class="nav__foot">
+        <span>Studio — Bali</span>
+        <span>Senin – Minggu, 09.00 – 18.00</span>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <button class="theme-toggle" id="invertToggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false" data-cursor="tema">
+        <span class="theme-toggle__thumb" aria-hidden="true"></span>
+        <span class="theme-toggle__ico theme-toggle__ico--sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg>
+        </span>
+        <span class="theme-toggle__ico theme-toggle__ico--moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.8 6.8 0 0 0 9.8 9.8z"/></svg>
+        </span>
+      </button>
+      <a href="#kontak" class="btn btn--solid btn--sm magnetic" data-cursor="kontak">Kontak</a>
+      <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══════════════ HERO — kartu poster ═══════════════ -->
+<section class="hero" id="home">
+  <div class="hero__card">
+
+    <!-- baris atas -->
+    <div class="hero__top">
+      <span class="hero__flag">Est. 2026</span>
+    </div>
+
+    <!-- panggung: teks besar + potret + klaim -->
+    <div class="hero__stage">
+
+      <figure class="hero__photo" data-depth="12">
+        <img src="assets/images/artacode.png?v=20261024-1035" alt="artacodestudio" width="720" height="900" fetchpriority="high">
+      </figure>
+
+      <div class="hero__intro">
+        <p class="hero__hey">Hey, saya</p>
+        <h1 class="hero__title" aria-label="artacodestudio">
+          <span class="hero__word"><b>artacode</b></span>
+          <span class="hero__word hero__word--out"><b>studio</b></span>
+        </h1>
+      </div>
+
+      <div class="hero__aside">
+        <p class="hero__claim">Motivasi <em></em></p>
+        <p class="hero__lead">Jangan takut gagal, coba lah sampai berhasil, jika gagal lagi maka coba lagi, jika berhasil hidup akan lebih tenang. Adios</p>
+      </div>
+
+    </div>
+
+    <!-- layanan -->
+    <ul class="hero__list">
+      <li><span class="hero__num">01</span><span class="hero__svc">Redesign Website</span></li>
+      <li><span class="hero__num">02</span><span class="hero__svc">Website Service</span></li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ═══════════════ TICKER ═══════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__row" id="tickerRow">
+    <div class="ticker__set">
+      <span>Redesign Website</span><b>✳</b><span>Web Development</span><b>✳</b>
+      <span>Redesign Website</span><b>✳</b><span>Web Development</span><b>✳</b>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TENTANG ═══════════════ -->
+<section class="section about" id="tentang">
+  <div class="container about__grid">
+    <div class="about__media reveal" data-reveal="fade-up">
+      <div class="about__frame">
+        <img src="assets/images/about.svg" alt="Ruang kerja artacodestudio" width="640" height="800" decoding="async">
+        <div class="about__stamp">
+          <span>EST.</span><b>2026</b><span>BALI</span>
+        </div>
+      </div>
+      <div class="about__tape" aria-hidden="true">DESIGN FIRST — CODE ALWAYS</div>
+    </div>
+
+    <div class="about__body">
+      <p class="kicker reveal" data-reveal="fade-up"><i class="dot"></i> 01 — Tentang Saya</p>
+      <h2 class="h2 reveal" data-reveal="words" data-delay="120">About<em>me</em>.</h2>
+
+      <p class="lead reveal" data-reveal="fade-up" data-delay="220">
+        Halo perkenalkan nama saya arta, saya adalah pelajar smk yang sedang melakukan dan mempelajari banyak hal serta mencari tau lebih dalam tentang dunia coding.</p>
+
+      <p class="reveal" data-reveal="fade-up" data-delay="320">
+        Banyak sekali yang saya pelajari di dunia coding ini, terutama pemahaman tentang logika dan ketelitian dalam menulis suatu baris kode serta bagaimana sistem keamanan di sebuah website maupun aplikasi bekerja. </p>
+
+      <a href="#proses" class="link-arrow magnetic reveal" data-reveal="fade-up" data-delay="400" data-cursor="proses">
+        Lihat cara kami bekerja
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ LAYANAN ═══════════════ -->
+<section class="section layanan" id="layanan">
+  <div class="container">
+    <header class="sec-head">
+      <p class="kicker reveal" data-reveal="fade-up"><i class="dot"></i> 02 — Layanan</p>
+      <h2 class="h2 reveal" data-reveal="words">Apa yang bisa <em>saya buat</em>.</h2>
+      <p class="sec-head__lead reveal" data-reveal="fade-up" data-delay="200">
+        Berikut beberapa layanan yang bisa saya buat atau yang pernah saya buat.
+      </p>
+    </header>
+
+    <div class="layanan__grid" id="servicesGrid">
+
+      <article class="card reveal" data-reveal="fade-up" data-tilt>
+        <div class="card__media">
+          <img src="assets/images/svc-web.svg" alt="Web Design dan Build" loading="lazy" width="300" height="300">
+          <span class="card__badge">POPULER</span>
+          <span class="card__plus">+</span>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Website &amp; Build</h3></div>
+          <p>Saya bisa membuat website landingpage portofolio maupun website berbasis aplikasi seperti di bagian karya saya.</p>
+          <ul class="card__tags"><li>Frontend</li><li>CMS</li></ul>
+        </div>
+      </article>
+
+      <article class="card reveal" data-reveal="fade-up" data-delay="120" data-tilt>
+        <div class="card__media">
+          <img src="assets/images/svc-brand.svg" alt="Redesign Style Website" loading="lazy" width="300" height="300">
+          <span class="card__badge card__badge--alt">REDESIGN</span>
+          <span class="card__plus">+</span>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Redesign Style Website</h3></div>
+          <p>Saya bisa redesign website dari keliatan nya website murah menjadi website elegant dan terlihat mahal.</p>
+          <ul class="card__tags"><li>Redesign</li><li>Style Guide</li></ul>
+        </div>
+      </article>
+
+      <article class="card reveal" data-reveal="fade-up" data-delay="240" data-tilt>
+        <div class="card__media">
+          <img src="assets/images/svc-app.svg" alt="Mobile Application" loading="lazy" width="300" height="300">
+          <span class="card__badge card__badge--alt">MOBILE</span>
+          <span class="card__plus">+</span>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Mobile Application</h3></div>
+          <p>Saya bisa membuat aplikasi di mobile dan juga saya masih di tahap belajar.</p>
+          <ul class="card__tags"><li>Android</li><li>iOS</li></ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROSES ═══════════════ -->
+<section class="section process" id="proses">
+  <div class="container">
+    <header class="sec-head sec-head--center">
+      <p class="kicker reveal" data-reveal="fade-up"><i class="dot"></i> 03 — Proses</p>
+      <h2 class="h2 reveal" data-reveal="words">Dari pembuatan ke <em>rilis</em>.</h2>
+    </header>
+
+    <div class="steps">
+      <div class="steps__line" aria-hidden="true"><i id="stepsLine"></i></div>
+
+      <div class="step reveal" data-reveal="fade-up">
+        <span class="step__num">01</span>
+        <div class="step__ico" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 8h26l10 10v38H14z"/>
+            <path d="M40 8v10h10"/>
+            <path d="M22 34h20M22 42h14"/>
+          </svg>
+        </div>
+        <h3>Brief</h3>
+        <p>Saya membaca dan mencari tau referensi dari pelanggan serta bagaimana kira-kira design untuk website yang di sukai dan cocok di pelanggan</p>
+        <span class="step__meta">Minggu 01</span>
+      </div>
+
+      <div class="step reveal" data-reveal="fade-up" data-delay="120">
+        <span class="step__num">02</span>
+        <div class="step__ico" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="12" width="30" height="26"/>
+            <rect x="26" y="26" width="30" height="26"/>
+            <path d="M20 56h28"/>
+          </svg>
+        </div>
+        <h3>Konsep</h3>
+        <p>Saya dan pelanggan menentukan konsep website yang akan di buat bagaimana.</p>
+        <span class="step__meta">Minggu 02 – 03</span>
+      </div>
+
+      <div class="step reveal" data-reveal="fade-up" data-delay="240">
+        <span class="step__num">03</span>
+        <div class="step__ico" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 16l-10 16 10 16M46 16l10 16-10 16"/>
+            <path d="M36 10l-8 44"/>
+          </svg>
+        </div>
+        <h3>Build</h3>
+        <p>Jika info brief dan konsep sudah di tentukan dan sudah sepakat dengan tema dan konsep yang ingin di buat, saya pun langsung mengerjakan nya.</p>
+        <span class="step__meta">Minggu 04 – 06</span>
+      </div>
+
+      <div class="step reveal" data-reveal="fade-up" data-delay="360">
+        <span class="step__num">04</span>
+        <div class="step__ico" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 50l4-14L42 8l14 14-28 28-18 4z"/>
+            <path d="M36 14l14 14"/>
+            <path d="M14 36l14 14"/>
+          </svg>
+        </div>
+        <h3>Revisi</h3>
+        <p>Setelah jadi hasil akhirnya, saya tidak langsung hosting website nya, saya menanyakan dulu terlebih dahulu dimana saja yang kurang dan saya pun lanjut revisi hingga pelanggan puas dengan hasil nya.</p>
+        <span class="step__meta">Minggu 07</span>
+      </div>
+
+      <div class="step reveal" data-reveal="fade-up" data-delay="480">
+        <span class="step__num">05</span>
+        <div class="step__ico" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 6l8 10-8 10-8-10z"/>
+            <path d="M32 26v20"/>
+            <circle cx="32" cy="50" r="8"/>
+          </svg>
+        </div>
+        <h3>Rilis/Finishing</h3>
+        <p>Setelah semua cocok dan sudah jadi, saya pun hosting website nya serta memberikan file kode dari website pelanggan tersebut.</p>
+        <span class="step__meta">Minggu 08</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ KARYA (stack 3D + modal) ═══════════════ -->
+<section class="section gallery gallery--dark" id="karya">
+
+  <div class="container gal__head">
+    <div class="gal__headL">
+      <span class="gal__kicker"><i></i>Selected Work</span>
+      <h2 class="gal__title">Work Gallery</h2>
+      <p class="gal__sub">Ini adalah beberapa hasil project yang telah saya buat.</p>
+    </div>
+  </div>
+
+  <div class="deck" id="deck" role="listbox" aria-label="Daftar proyek pilihan" tabindex="0">
+      <button class="deck__card" data-i="0" data-ratio="16/9" role="option" aria-selected="true"
+              data-src="assets/images/appdod.jpg" data-title="Portofolio" data-cat="Website Portofolio · 2026"
+              data-desc="Website Portofolio untuk Appdod, website portofolio pribadi" data-tags="Portofolio">
+        <img src="assets/images/appdod.jpg" alt="Proyek Appdod" loading="lazy">
+        <span class="deck__n">01</span>
+      </button>
+
+      <button class="deck__card" data-i="1" data-ratio="16/9" role="option" aria-selected="false"
+              data-src="assets/images/cashnote.jpg" data-title="Cashnote" data-cat="Aplikasi Pencatatan Keuangan · 2026"
+              data-desc="Aplikasi pencatatan keuangan pribadi dengan ui modern aplikasi ini memudahkan saya untuk mencatat pemasukan dan pengeluaran, ini adalah project aplikasi mobile yang saya buat." data-tags="Mobile|App">
+        <img src="assets/images/cashnote.jpg" alt="Proyek Cashnote" loading="lazy">
+        <span class="deck__n">02</span>
+      </button>
+
+      <button class="deck__card" data-i="2" data-ratio="3/4" role="option" aria-selected="false"
+              data-src="assets/images/pencatatanuangkas.jpg" data-title="Pencatatan Uang Kas" data-cat="Web App · 2026"
+              data-desc="Website berbasis app tentang pencatatan uang kas kelas." data-tags="Web WebApp|PHP|Database">
+        <img src="assets/images/pencatatanuangkas.jpg" alt="Proyek Pencatatan Uang Kas" loading="lazy">
+        <span class="deck__n">03</span>
+      </button>
+
+      <button class="deck__card" data-i="3" data-ratio="16/9" role="option" aria-selected="false"
+              data-src="assets/images/rakacihuy.jpg" data-title="Rakacihuy" data-cat="Portfolio Website · 2026"
+              data-desc="Website portofolio untuk video editor dan Designer." data-tags="Website|Portfolio|Video">
+        <img src="assets/images/rakacihuy.jpg" alt="Proyek Rakacihuy" loading="lazy">
+        <span class="deck__n">04</span>
+      </button>
+
+      <button class="deck__card" data-i="4" data-ratio="9/16" role="option" aria-selected="false"
+              data-src="assets/images/websitekasir.jpg" data-title="Website Kasir" data-cat="Web Dashboard · 2026"
+              data-desc="Aplikasi kasir berbasis web untuk mengelola transaksi, stok barang, dan laporan penjualan serta pendapatan" data-tags="POS|Web App|Dashboard">
+        <img src="assets/images/websitekasir.jpg" alt="Proyek Website Kasir" loading="lazy">
+        <span class="deck__n">05</span>
+      </button>
+
+  </div>
+
+  <div class="container gal__info">
+    <h3 class="gal__pTitle" id="deckTitle"></h3>
+    <p class="gal__pDesc" id="deckDesc"></p>
+    <div class="gal__tags" id="deckTags"></div>
+  </div>
+
+  <div class="container gal__foot">
+    <span class="gal__count"><i></i><b id="deckCount">001</b></span>
+    <div class="gal__nav">
+      <button id="deckPrev" aria-label="Proyek sebelumnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      </button>
+      <button id="deckNext" aria-label="Proyek berikutnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════ KONTAK ═══════════════ -->
+<section class="section reserve" id="kontak">
+  <div class="container reserve__grid reserve__grid--solo">
+    <div class="reserve__info">
+      <p class="kicker reveal" data-reveal="fade-up"><i class="dot"></i> 05 — Kontak</p>
+      <h2 class="h2 reveal" data-reveal="words">Mari <em>terhubung</em>.</h2>
+      <p class="lead reveal" data-reveal="fade-up" data-delay="200">
+        Kamu ingin mempunyai sebuah website? hubungi saya untuk pembuatan sebuah website!!.
+      </p>
+
+      <ul class="reserve__meta">
+        <li class="reveal" data-reveal="fade-left" data-delay="120">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          </span>
+          <div><b>Senin – Minggu</b><p>09.00 – 18.00 WITA</p></div>
+        </li>
+        <li class="reveal" data-reveal="fade-left" data-delay="200">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg>
+          </span>
+          <div><b>Balasan rata-rata 1 hari kerja</b><p>Lewat Instagram, TikTok, atau Discord.</p></div>
+        </li>
+      </ul>
+
+      <div class="reserve__socials reveal" data-reveal="fade-up" data-delay="280">
+        <a href="https://www.instagram.com/artacodestudio" class="soc-pill magnetic" data-cursor="ig" aria-label="Instagram artacodestudio" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@artacodestudio" class="soc-pill magnetic" data-cursor="tiktok" aria-label="TikTok artacodestudio" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3h-2.8v12.1a2.6 2.6 0 1 1-2.2-2.6v-2.9a5.5 5.5 0 1 0 5 5.5V8.8c1.2.9 2.5 1.4 4 1.4V7.4c-2.2-.3-3.6-1.7-4-4.4z"/></svg>
+          TikTok
+        </a>
+        <a href="https://discord.com/users/adeknyajefrinikol" class="soc-pill magnetic" data-cursor="discord" aria-label="Discord artacodestudio" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.6A16.6 16.6 0 0 0 16 3.2l-.2.4c1.6.4 3 1 4.3 1.8a15.8 15.8 0 0 0-13.8 0C7.6 4.6 9 4 10.6 3.6L10.4 3.2A16.6 16.6 0 0 0 6.1 4.6C3.6 8.3 2.9 12 3.2 15.6a16.8 16.8 0 0 0 5.1 2.6l.8-1.3c-.6-.2-1.2-.5-1.7-.8l.4-.3c3.2 1.5 6.7 1.5 9.9 0l.4.3c-.5.3-1.1.6-1.7.8l.8 1.3a16.8 16.8 0 0 0 5.1-2.6c.4-4-.7-7.7-3-11zM9.4 13.5c-.8 0-1.5-.8-1.5-1.7 0-1 .7-1.7 1.5-1.7s1.5.8 1.5 1.7c0 1-.7 1.7-1.5 1.7zm5.2 0c-.8 0-1.5-.8-1.5-1.7 0-1 .7-1.7 1.5-1.7s1.5.8 1.5 1.7c0 1-.7 1.7-1.5 1.7z"/></svg>
+          Discord
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer__ticker" aria-hidden="true">
+    <div class="ticker__row ticker__row--rev" id="tickerRow2">
+      <div class="ticker__set">
+        <span>ARTACODESTUDIO</span><b>✳</b><span>EST 2026</span><b>✳</b><span>BALI</span><b>✳</b>
+        <span>DESIGN &amp; CODE</span><b>✳</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <h2 class="footer__word" data-text="ARTA">ARTA</h2>
+      <p>Pembuatan Website & Aplikasi Mobile</p>
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/artacodestudio" class="soc magnetic" data-cursor="ig" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@artacodestudio" class="soc magnetic" data-cursor="tiktok" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3h-2.8v12.1a2.6 2.6 0 1 1-2.2-2.6v-2.9a5.5 5.5 0 1 0 5 5.5V8.8c1.2.9 2.5 1.4 4 1.4V7.4c-2.2-.3-3.6-1.7-4-4.4z"/></svg>
+        </a>
+        <a href="https://discord.com/users/adeknyajefrinikol" class="soc magnetic" data-cursor="discord" aria-label="Discord" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.6A16.6 16.6 0 0 0 16 3.2l-.2.4c1.6.4 3 1 4.3 1.8a15.8 15.8 0 0 0-13.8 0C7.6 4.6 9 4 10.6 3.6L10.4 3.2A16.6 16.6 0 0 0 6.1 4.6C3.6 8.3 2.9 12 3.2 15.6a16.8 16.8 0 0 0 5.1 2.6l.8-1.3c-.6-.2-1.2-.5-1.7-.8l.4-.3c3.2 1.5 6.7 1.5 9.9 0l.4.3c-.5.3-1.1.6-1.7.8l.8 1.3a16.8 16.8 0 0 0 5.1-2.6c.4-4-.7-7.7-3-11zM9.4 13.5c-.8 0-1.5-.8-1.5-1.7 0-1 .7-1.7 1.5-1.7s1.5.8 1.5 1.7c0 1-.7 1.7-1.5 1.7zm5.2 0c-.8 0-1.5-.8-1.5-1.7 0-1 .7-1.7 1.5-1.7s1.5.8 1.5 1.7c0 1-.7 1.7-1.5 1.7z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer__col" aria-label="Navigasi footer">
+      <h4>Jelajahi</h4>
+      <a href="#tentang">Studio</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#proses">Proses</a>
+      <a href="#karya">Karya</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="footer__col">
+      <h4>Jam Buka</h4>
+      <p>Senin – Minggu<br>09.00 – 18.00 WITA<br>Meeting by appointment</p>
+    </div>
+  </div>
+
+  <div class="container footer__base">
+    <span>© <span id="year">2026</span> artacodestudio</span>
+    <a href="#home" class="footer__top">Kembali ke atas ↑</a>
+  </div>
+</footer>
+
+<!-- ═══════════════ MODAL DETAIL PROYEK ═══════════════ -->
+<div class="lightbox pmodal" id="pModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+  <button class="lightbox__close" id="pmClose" type="button" aria-label="Tutup pratinjau">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+
+  <button class="lightbox__nav lightbox__nav--prev" id="pmPrev" type="button" aria-label="Proyek sebelumnya">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+  </button>
+
+  <article class="pm">
+    <div class="pm__media" id="pmMedia">
+      <img id="pmImg" src="" alt="">
+      <span class="pm__num" id="pmNum">01 / 05</span>
+    </div>
+
+    <div class="pm__body">
+      <span class="pm__cat" id="pmCat"></span>
+      <h3 class="pm__title" id="pmTitle"></h3>
+      <p class="pm__desc" id="pmDesc"></p>
+      <ul class="pm__tags" id="pmTags"></ul>
+    </div>
+  </article>
+
+  <button class="lightbox__nav lightbox__nav--next" id="pmNext" type="button" aria-label="Proyek berikutnya">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </button>
+</div>
+
+<!-- ═══════════════ MOBILE BAR ═══════════════ -->
+<div class="mobar" id="mobar">
+  <a href="#layanan" class="mobar__item is-active" data-mob="layanan"><span>Layanan</span></a>
+  <a href="#karya" class="mobar__item" data-mob="karya"><span>Karya</span></a>
+  <a href="#kontak" class="mobar__item mobar__item--cta" data-mob="kontak"><span>Kontak</span></a>
+</div>
+
+<script src="js/main.js?v=20261024-1440"></script>
+</body>
+</html>

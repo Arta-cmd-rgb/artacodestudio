@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img" aria-label="Studio artacodestudio">
+  <defs>
+    <pattern id="ab" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#000"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="800" fill="#fff"/>
+  <rect x="0" y="0" width="640" height="560" fill="#000"/>
+  <rect x="0" y="0" width="640" height="560" fill="url(#ab)" opacity=".2"/>
+  <path d="M56 56h130M56 92h80" stroke="#fff" stroke-width="5" opacity=".85"/>
+  <!-- monitor -->
+  <rect x="300" y="120" width="270" height="180" fill="#fff"/>
+  <rect x="300" y="120" width="270" height="26" fill="#000"/>
+  <circle cx="316" cy="133" r="5" fill="#fff"/>
+  <rect x="322" y="166" width="96" height="12" fill="#000"/>
+  <rect x="322" y="190" width="150" height="8" fill="#000" opacity=".5"/>
+  <rect x="322" y="206" width="120" height="8" fill="#000" opacity=".5"/>
+  <rect x="322" y="230" width="70" height="34" fill="#000"/>
+  <rect x="402" y="230" width="54" height="34" fill="none" stroke="#000" stroke-width="4"/>
+  <rect x="466" y="230" width="78" height="12" fill="#000"/>
+  <rect x="466" y="250" width="54" height="10" fill="#000" opacity=".5"/>
+  <rect x="404" y="300" width="62" height="14" fill="#fff"/>
+  <rect x="330" y="314" width="210" height="10" fill="#fff"/>
+  <!-- frame Karya di dinding -->
+  <rect x="56" y="140" width="130" height="170" fill="none" stroke="#fff" stroke-width="5"/>
+  <circle cx="121" cy="200" r="28" fill="#fff"/>
+  <path d="M76 288l30-42 26 30 22-24" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="66" y="336" width="46" height="60" fill="#fff"/>
+  <rect x="126" y="336" width="46" height="60" fill="none" stroke="#fff" stroke-width="5"/>
+  <!-- desainer -->
+  <circle cx="230" cy="380" r="34" fill="#fff"/>
+  <path d="M176 560v-104c0-42 24-62 54-62s54 20 54 62v104z" fill="#fff"/>
+  <path d="M258 424c46 10 78 26 104 48" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="368" cy="476" r="16" fill="#fff"/>
+  <!-- meja -->
+  <rect x="300" y="540" width="340" height="16" fill="#fff"/>
+  <path d="M320 556v40M620 556v40" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <!-- sticky note -->
+  <rect x="470" y="180" width="60" height="60" fill="#fff" transform="rotate(-7 500 210)"/>
+  <!-- bawah: bar editorial -->
+  <rect x="60" y="600" width="420" height="14" fill="#000"/>
+  <rect x="60" y="634" width="520" height="14" fill="#000"/>
+  <rect x="60" y="668" width="340" height="14" fill="#000"/>
+  <rect x="60" y="702" width="460" height="14" fill="#000"/>
+  <rect x="60" y="736" width="180" height="14" fill="#000"/>
+</svg>

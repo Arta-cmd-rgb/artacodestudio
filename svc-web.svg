@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="0" role="img" aria-label="Web Design dan Build">
+  <defs>
+    <pattern id="hsvc-web" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.7" fill="#000"/>
+    </pattern>
+  </defs>
+  <rect x="30" y="52" width="240" height="164" fill="url(#hsvc-web)" opacity=".4"/>
+  <rect x="42" y="40" width="216" height="150" fill="#fff" stroke="#000" stroke-width="5"/>
+  <rect x="42" y="40" width="216" height="26" fill="#000"/>
+  <circle cx="60" cy="53" r="5" fill="#fff"/>
+  <circle cx="78" cy="53" r="5" fill="#fff"/>
+  <rect x="98" y="49" width="86" height="8" fill="#fff" opacity=".55"/>
+  <rect x="60" y="84" width="82" height="12" fill="#000"/>
+  <rect x="60" y="104" width="120" height="7" fill="#000" opacity=".5"/>
+  <rect x="60" y="118" width="96" height="7" fill="#000" opacity=".5"/>
+  <rect x="60" y="140" width="58" height="30" fill="#000"/>
+  <rect x="126" y="140" width="42" height="30" fill="none" stroke="#000" stroke-width="4"/>
+  <rect x="176" y="140" width="64" height="14" fill="#000"/>
+  <rect x="176" y="160" width="44" height="10" fill="#000" opacity=".5"/>
+  <path d="M196 214v22M182 228l14-14 14 14" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Mobile Application">
+  <defs>
+    <pattern id="hsvc-app" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.7" fill="#000"/>
+    </pattern>
+  </defs>
+  <rect x="34" y="34" width="232" height="232" fill="url(#hsvc-app)" opacity=".38"/>
+  <rect x="86" y="28" width="128" height="244" rx="24" fill="#fff" stroke="#000" stroke-width="6"/>
+  <rect x="126" y="42" width="48" height="8" rx="4" fill="#000"/>
+  <rect x="104" y="68" width="64" height="13" fill="#000"/>
+  <rect x="104" y="89" width="92" height="6" fill="#000" opacity=".45"/>
+  <rect x="104" y="107" width="92" height="64" fill="#000"/>
+  <path d="M142 129v20M132 139l10-10 10 10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="104" y="183" width="42" height="9" fill="#000" opacity=".55"/>
+  <rect x="154" y="183" width="42" height="9" fill="#000" opacity=".55"/>
+  <rect x="104" y="201" width="42" height="9" fill="#000" opacity=".3"/>
+  <rect x="154" y="201" width="42" height="9" fill="#000" opacity=".3"/>
+  <rect x="104" y="236" width="24" height="14" fill="#000"/>
+  <rect x="138" y="236" width="24" height="14" fill="none" stroke="#000" stroke-width="3"/>
+  <rect x="172" y="236" width="24" height="14" fill="none" stroke="#000" stroke-width="3"/>
+  <rect x="36" y="74" width="34" height="34" fill="#fff" stroke="#000" stroke-width="4"/>
+  <path d="M53 82v18M44 91h18" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <rect x="232" y="168" width="30" height="30" fill="#000"/>
+  <circle cx="247" cy="183" r="7" fill="#fff"/>
+  <path d="M52 200h22M52 212h14" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+</svg>

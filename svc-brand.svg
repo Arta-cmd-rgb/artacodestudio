@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="0" role="img" aria-label="Brand Identity">
+  <defs>
+    <pattern id="hsvc-brand" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.7" fill="#000"/>
+    </pattern>
+  </defs>
+  <circle cx="150" cy="150" r="128" fill="url(#hsvc-brand)" opacity=".38"/>
+  <circle cx="150" cy="150" r="128" fill="none" stroke="#000" stroke-width="3"/>
+  <circle cx="150" cy="150" r="86" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="7 7"/>
+  <circle cx="150" cy="150" r="44" fill="#000"/>
+  <path d="M150 62v40M150 198v40M62 150h40M198 150h40" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="15" fill="#fff"/>
+  <rect x="36" y="212" width="46" height="46" fill="none" stroke="#000" stroke-width="4"/>
+  <rect x="218" y="212" width="46" height="46" fill="#000"/>
+  <path d="M46 66h50M46 80h32" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+
+</svg>
